@@ -1,0 +1,25 @@
+{
+  "name": "avrgirl-chips-json",
+  "version": "0.0.0",
+  "description": "AVR microchip properties in friendly json format, for use with avrgirl or whatever you fancy.",
+  "main": "avrgirl-chips-json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noopkat/avrgirl-chips-json.git"
+  },
+  "keywords": [
+    "avr",
+    "microchip",
+    "avrgirl",
+    "chip"
+  ],
+  "author": "Suz Hinton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noopkat/avrgirl-chips-json/issues"
+  },
+  "homepage": "https://github.com/noopkat/avrgirl-chips-json#readme"
+}
