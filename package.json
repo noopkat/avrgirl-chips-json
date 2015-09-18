@@ -1,6 +1,6 @@
 {
   "name": "avrgirl-chips-json",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "AVR microchip properties in friendly json format, for use with avrgirl or whatever you fancy.",
   "main": "avrgirl-chips-json.js",
   "scripts": {
