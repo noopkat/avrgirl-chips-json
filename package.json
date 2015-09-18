@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/noopkat/avrgirl-chips-json/issues"
   },
-  "homepage": "https://github.com/noopkat/avrgirl-chips-json#readme"
+  "homepage": "https://github.com/noopkat/avrgirl-chips-json#readme",
+  "devDependencies": {
+    "glob": "^5.0.14"
+  }
 }
