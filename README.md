@@ -14,11 +14,11 @@ AVR microchip properties in friendly json, for use with avrgirl or whatever you 
 ```javascript
 var chips = require('avrgirl-chips-json');
 
-console.log(chips.attiny84);
+console.log(chips.attiny85);
 
 ```
 
-Example object format (ATtiny84):
+Example object format (ATtiny85):
 
 ```javascript
 {
