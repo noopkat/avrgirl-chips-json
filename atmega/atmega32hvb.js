@@ -1,5 +1,5 @@
 module.exports = {
-  "name": "ATtiny45",
+  "name": "ATmega32HVB",
   "timeout": 200,
   "stabDelay": 100,
   "cmdexeDelay": 25,
@@ -18,30 +18,30 @@ module.exports = {
   "flash": {
     "write": [64, 76, 0],
     "read": [32, 0, 0],
-    "mode": 193,
-    "blockSize": 64,
+    "mode": 65,
+    "blockSize": 128,
     "delay": 10,
-    "poll2": 255,
-    "poll1": 255,
-    "size": 4096,
-    "pageSize": 64,
-    "pages": 64,
-    "addressOffset": 1
+    "poll2": 0,
+    "poll1": 0,
+    "size": 32768,
+    "pageSize": null,
+    "pages": null,
+    "addressOffset": null
   },
   "eeprom": {
     "write": [193, 194, 0],
     "read": [160, 0, 0],
-    "mode": 193,
+    "mode": 65,
     "blockSize": 4,
-    "delay": 5,
-    "poll2": 255,
-    "poll1": 255,
-    "size": 256,
+    "delay": 10,
+    "poll2": 0,
+    "poll1": 0,
+    "size": 1024,
     "pageSize": 4,
-    "pages": 64,
+    "pages": 256,
     "addressOffset": 0
   },
-  "sig": [30, 146, 6],
+  "sig": [30, 149, 16],
   "signature": {
     "size": 3,
     "startAddress": 0,
@@ -51,13 +51,11 @@ module.exports = {
     "startAddress": 0,
     "write": {
       "low": [172, 160, 0, 0],
-      "high": [172, 168, 0, 0],
-      "ext": [172, 164, 0, 0]
+      "high": [172, 168, 0, 0]
     },
     "read": {
       "low": [80, 0, 0, 0],
-      "high": [88, 8, 0, 0],
-      "ext": [80, 8, 0, 0]
+      "high": [88, 8, 0, 0]
     }
   }
 }

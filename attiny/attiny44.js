@@ -1,64 +1,63 @@
 module.exports = {
-  sig: [0x1e, 0x92, 0x07],
-  timeout: 0xC8,
-  stabDelay: 0x64,
-  cmdexeDelay: 0x19,
-  syncLoops: 0x20,
-  byteDelay: 0x00,
-  pollIndex: 0x03,
-  pollValue: 0x53,
-  preDelay: 0x01,
-  postDelay: 0x01,
-  pollMethod: 0x01,
-  poll1: 0x00,
-  poll2: 0x00,
-  pgmEnable: [0xAC, 0x53, 0x00, 0x00],
-  flash: {
-    paged: true,
-    mode: 0xC1,
-    delay: 6,
-    size: 4096,
-    pageSize: 64,
-    pages: 64,
-    addressOffset: 1,
-    write: [0x40, 0x4C, 0x20],
-    read: [0x20, 0x00, 0x00],
-    poll1: 0xFF,
-    poll2: 0xFF
+  "name": "ATtiny44",
+  "timeout": 200,
+  "stabDelay": 100,
+  "cmdexeDelay": 25,
+  "syncLoops": 32,
+  "byteDelay": 0,
+  "pollIndex": 3,
+  "pollValue": 83,
+  "preDelay": 1,
+  "postDelay": 1,
+  "pgmEnable": [172, 83, 0, 0],
+  "erase": {
+    "cmd": [172, 128, 0, 0],
+    "delay": 45,
+    "pollMethod": 1
   },
-  eeprom: {
-    paged: true,
-    mode: 0xC1,
-    delay: 6,
-    size: 256,
-    pageSize: 4,
-    pages: 64,
-    addressOffset: 0,
-    write: [0xC1, 0xC2, 0xA0],
-    read: [0xA0, 0x00, 0x00],
-    poll1: 0xFF,
-    poll2: 0xFF
+  "flash": {
+    "write": [64, 76, 0],
+    "read": [32, 0, 0],
+    "mode": 65,
+    "blockSize": 64,
+    "delay": 10,
+    "poll2": 255,
+    "poll1": 255,
+    "size": 4096,
+    "pageSize": 64,
+    "pages": 64,
+    "addressOffset": 0
   },
-  erase: {
-    delay: 10,
-    cmd: [0xAC, 0x80, 0x00, 0x00]
+  "eeprom": {
+    "write": [193, 194, 0],
+    "read": [160, 0, 0],
+    "mode": 65,
+    "blockSize": 4,
+    "delay": 10,
+    "poll2": 255,
+    "poll1": 255,
+    "size": 256,
+    "pageSize": 4,
+    "pages": 64,
+    "addressOffset": 0
   },
-  signature: {
-    size: 3,
-    startAddress: 0x00,
-    read: [0x30, 0x00, 0x00, 0x00]
+  "sig": [30, 146, 7],
+  "signature": {
+    "size": 3,
+    "startAddress": 0,
+    "read": [48, 0, 0, 0]
   },
-  fuses: {
-    startAddress: 0x00,
-    write: {
-      low: [0xAC, 0xA0, 0x00, 0x6A],
-      high: [0xAC, 0xA8, 0x00, 0xDF],
-      ext: [0xAC, 0xA4, 0x00, 0xFF]
+  "fuses": {
+    "startAddress": 0,
+    "write": {
+      "low": [172, 160, 0, 0],
+      "high": [172, 168, 0, 0],
+      "ext": [172, 164, 0, 0]
     },
-    read: {
-      low: [0x50, 0x00, 0x00, 0x00],
-      high: [0x58, 0x08, 0x00, 0x00],
-      ext: [0x50, 0x08, 0x00, 0x00]
+    "read": {
+      "low": [80, 0, 0, 0],
+      "high": [88, 8, 0, 0],
+      "ext": [80, 8, 0, 0]
     }
   }
-};
+}

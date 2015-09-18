@@ -1,5 +1,5 @@
 module.exports = {
-  "name": "ATtiny45",
+  "name": "ATtiny26",
   "timeout": 200,
   "stabDelay": 100,
   "cmdexeDelay": 25,
@@ -12,36 +12,36 @@ module.exports = {
   "pgmEnable": [172, 83, 0, 0],
   "erase": {
     "cmd": [172, 128, 0, 0],
-    "delay": 45,
-    "pollMethod": 1
+    "delay": 20,
+    "pollMethod": 0
   },
   "flash": {
-    "write": [64, 76, 0],
+    "write": [64, 76, 32],
     "read": [32, 0, 0],
-    "mode": 193,
-    "blockSize": 64,
+    "mode": 33,
+    "blockSize": 16,
     "delay": 10,
     "poll2": 255,
     "poll1": 255,
-    "size": 4096,
-    "pageSize": 64,
-    "pages": 64,
-    "addressOffset": 1
-  },
-  "eeprom": {
-    "write": [193, 194, 0],
-    "read": [160, 0, 0],
-    "mode": 193,
-    "blockSize": 4,
-    "delay": 5,
-    "poll2": 255,
-    "poll1": 255,
-    "size": 256,
-    "pageSize": 4,
+    "size": 2048,
+    "pageSize": 32,
     "pages": 64,
     "addressOffset": 0
   },
-  "sig": [30, 146, 6],
+  "eeprom": {
+    "write": [192, 0, 160],
+    "read": [160, 0, 0],
+    "mode": 4,
+    "blockSize": 64,
+    "delay": 20,
+    "poll2": 255,
+    "poll1": 255,
+    "size": 128,
+    "pageSize": 4,
+    "pages": 32,
+    "addressOffset": 0
+  },
+  "sig": [30, 145, 9],
   "signature": {
     "size": 3,
     "startAddress": 0,
@@ -51,13 +51,11 @@ module.exports = {
     "startAddress": 0,
     "write": {
       "low": [172, 160, 0, 0],
-      "high": [172, 168, 0, 0],
-      "ext": [172, 164, 0, 0]
+      "high": [172, 168, 0, 0]
     },
     "read": {
       "low": [80, 0, 0, 0],
-      "high": [88, 8, 0, 0],
-      "ext": [80, 8, 0, 0]
+      "high": [88, 8, 0, 0]
     }
   }
 }

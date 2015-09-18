@@ -1,5 +1,5 @@
 module.exports = {
-  "name": "ATtiny45",
+  "name": "ATtiny261A",
   "timeout": 200,
   "stabDelay": 100,
   "cmdexeDelay": 25,
@@ -12,36 +12,36 @@ module.exports = {
   "pgmEnable": [172, 83, 0, 0],
   "erase": {
     "cmd": [172, 128, 0, 0],
-    "delay": 45,
-    "pollMethod": 1
+    "delay": 10,
+    "pollMethod": 0
   },
   "flash": {
     "write": [64, 76, 0],
     "read": [32, 0, 0],
-    "mode": 193,
-    "blockSize": 64,
+    "mode": 65,
+    "blockSize": 32,
     "delay": 10,
     "poll2": 255,
     "poll1": 255,
-    "size": 4096,
-    "pageSize": 64,
+    "size": 2048,
+    "pageSize": 32,
     "pages": 64,
-    "addressOffset": 1
+    "addressOffset": 0
   },
   "eeprom": {
     "write": [193, 194, 0],
     "read": [160, 0, 0],
-    "mode": 193,
+    "mode": 65,
     "blockSize": 4,
-    "delay": 5,
+    "delay": 10,
     "poll2": 255,
     "poll1": 255,
-    "size": 256,
+    "size": 128,
     "pageSize": 4,
-    "pages": 64,
+    "pages": 32,
     "addressOffset": 0
   },
-  "sig": [30, 146, 6],
+  "sig": [30, 145, 12],
   "signature": {
     "size": 3,
     "startAddress": 0,
