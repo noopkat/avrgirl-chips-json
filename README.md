@@ -238,8 +238,7 @@ Follow the format of existing chips in this repo. If you need to add a new direc
 
 1. Fork this repo.
 2. Each new chip needs its own file created and all keys filled out.
-3. Require the new chip file(s) within `avrgirl-chips-json.js` in the root directory of this repo.
-4. Open a pull request and briefly explain the chips you added
+3. Open a pull request and briefly explain the chips you added
 
 Thank you! :raised_hands:
 
