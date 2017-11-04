@@ -24,7 +24,7 @@ module.exports = {
     "poll2": 0,
     "poll1": 0,
     "size": 8192,
-    "pageSize": null,
+    "pageSize": 128,
     "pages": null,
     "addressOffset": null
   },
