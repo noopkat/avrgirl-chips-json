@@ -231,6 +231,9 @@ The following chips are supported. If you encounter a bug with any of them, plea
 + atmega8hva
 + atmega8u2
 
+## Notes on usage
+
+Unknown values for chips are listed as `null`. If you are using this project, please keep this in mind and implement error handling or account in some way for the possibility of `null` values in your code.
 
 ## Contributing
 
