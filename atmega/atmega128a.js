@@ -24,8 +24,8 @@ module.exports = {
     "poll2": 0,
     "poll1": 0,
     "size": 131072,
-    "pageSize": null,
-    "pages": null,
+    "pageSize": 128,
+    "pages": 512,
     "addressOffset": null
   },
   "eeprom": {
